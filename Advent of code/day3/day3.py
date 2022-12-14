@@ -1,7 +1,7 @@
 #part 1
 #find common item
 with open("Advent of code\day3\input.txt") as file:
-    sum = 0
+    sum1 = 0
     for line in file:
         half1 = slice(0,len(line)//2)
         half2 = slice(len(line)//2, len(line))
@@ -15,11 +15,11 @@ with open("Advent of code\day3\input.txt") as file:
             priority = ord(item) -96
         if item >= "A" and item <= "Z":
             priority =ord(item) -38 
-        sum += priority
-    print(sum)
+        sum1 += priority
+    print(sum1)
 #part 2
 with open("Advent of code\day3\input.txt") as file:
-    sum = 0
+    sum1 = 0
     line = file.readline().rstrip()
     while line:
         g1 = set(line)
@@ -32,9 +32,9 @@ with open("Advent of code\day3\input.txt") as file:
             priority = ord(badge) -96
         if badge >= "A" and badge <= "Z":
              priority =ord(badge) -38 
-        sum += priority
+        sum1 += priority
         line = file.readline().rstrip()
-    print(sum)
+    print(sum1)
 
 
 
