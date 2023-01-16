@@ -1,0 +1,14 @@
+{
+"first" : "Joe",
+"last" : "Jochsen",
+"gender" : "male",
+"age" : 28,
+"address" : {
+    "street":"101",
+    "city":"SanDiego",
+    "state":"CA"
+},
+"phone": [{"type" : "home", "number" : "75491315"},
+          {"type" : "mobile", "number" : "54321560"},
+          {"type" : "work", "number" : "999444222"}]
+}
